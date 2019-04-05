@@ -5,7 +5,7 @@ class MyValidator < ActiveModel::Validator
       if a.include?(record.title)
       # if clickbait.detect {|el| record.title.include?(el) }.nil?
       else
-        record.errors[:title] << "Your title must contain clickbait" 
+        record.errors[:title] << "Your title must contain clickbait"
       end
     end
   end
